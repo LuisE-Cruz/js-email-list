@@ -14,12 +14,10 @@ generator.addEventListener("click", () => {
         axios.get(endpoint).then((response) => {
             const result = response.data.response;
             mails.innerHTML += `
-            <li class="list-unstyled my-3">
-
-                        <div class="bg-primary bg-opacity-10 border-primary rounded text-primary">
+                        <li class="list-unstyled my-3">
+                        <div class="bg-primary bg-opacity-10 border border-primary rounded text-primary">
                             ${result}
                         </div>
-
                     </li>
             `;
         });
